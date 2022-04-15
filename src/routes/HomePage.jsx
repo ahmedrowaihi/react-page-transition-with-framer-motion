@@ -1,11 +1,15 @@
+import { motion } from "framer-motion";
 function HomePage() {
   return (
-    <div className="grid">
-      <article>
+    <motion.div
+      initial={{ opacity: 0, x: -100 }}
+      animate={{ opacity: 1, x: 0 }}
+      exit={{ opacity: 0, x: 100 }}
+      className="grid"
+    >
+      <motion.article initial={{ x: -100 }} whileInView={{ x: 0 }}>
         <hgroup>
-          <h2>
-            Apply Enter & Exit Page Transition with Framer Motion & React Router
-          </h2>
+          <h2>Page Transition with Framer Motion & React Router</h2>
           <h3>It's Pretty Simple!</h3>
         </hgroup>
         <p>You don't need to do a lot!</p>
@@ -25,8 +29,8 @@ function HomePage() {
             <cite>- framer-motion </cite>
           </footer>
         </blockquote>
-      </article>
-    </div>
+      </motion.article>
+    </motion.div>
   );
 }
 

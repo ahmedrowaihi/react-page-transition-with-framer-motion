@@ -1,8 +1,13 @@
-import React from "react";
-
+import { motion } from "framer-motion";
 function AboutPage() {
   return (
-    <div className="grid" style={{ marginTop: "3 rem" }}>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      className="grid"
+      style={{ marginTop: "3 rem" }}
+    >
       <section>
         <hgroup>
           <h2>My Name is Ahmed</h2>
@@ -24,7 +29,7 @@ function AboutPage() {
           </footer>
         </blockquote>
       </section>
-    </div>
+    </motion.div>
   );
 }
 
