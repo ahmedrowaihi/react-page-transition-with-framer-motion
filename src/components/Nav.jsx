@@ -16,7 +16,9 @@ function Nav() {
             src="https://pbs.twimg.com/profile_images/1485924409537961988/VBcCcsSo_400x400.jpg"
             alt="Ahmed Rowaihi Profile Image"
           />
-          <strong style={{ marginLeft: "1rem" }}>SPA - No Framework</strong>
+          <strong style={{ marginLeft: "1rem" }}>
+            React Router - Page Transitions
+          </strong>
         </li>
       </ul>
       <ul>
